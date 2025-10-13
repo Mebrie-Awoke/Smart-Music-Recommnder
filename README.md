@@ -18,7 +18,9 @@ An intelligent music recommendation engine that suggests songs based on user pre
 - Scikit-learn (Machine Learning)
 - Linear Regression (Supervised ML)
 - numpy
+  
 **RESTFul API  for backend and frontend Integration
+
 ## 📊 How It Works
 1. **Data Processing**: Pandas crushes and cleans large music datasets
 2. **Model Training**: Linear regression model learns patterns from user preferences
