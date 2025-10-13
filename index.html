@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎶 Smart Music Recommendation System</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>MusicRec</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#recommendation" class="nav-link" data-section="recommendation">Recommendation</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section style="background-image: url('image.png');" id="home" class="active">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Favorite Songs</h1>
+                <p>My intelligent music recommendation system analyzes your preferences to suggest tracks you'll love. Experience personalized music discovery like never before.</p>
+                <a href="#recommendation" class="btn btn-primary nav-link" data-section="recommendation">
+                    <i class="fas fa-magic"></i> Get Recommendations
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About My Music System</h2>
+                <p>Learn how my intelligent algorithm creates personalized music recommendations just for you</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>How It Works</h3>
+                    <p>My music recommendation system uses advanced machine learning algorithms to analyze your musical preferences and match them with similar tracks from my extensive database.</p>
+                    <p>By evaluating various audio features and patterns, I can predict which songs you're most likely to enjoy based on your input preferences.</p>
+
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <h4>AI-Powered</h4>
+                            <p>Advanced machine learning algorithms</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-database"></i>
+                            <h4>Extensive Library</h4>
+                            <p>Thousands of songs across all genres</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-cog"></i>
+                            <h4>Personalized</h4>
+                            <p>Tailored to your unique taste</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Fast Results</h4>
+                            <p>Get recommendations in seconds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="card">
+                        <h3>My Algorithm</h3>
+                        <p>The system analyzes multiple audio features including:</p>
+                        <ul class="feature-list">
+                            <li>Danceability and Energy</li>
+                            <li>Musical Valence (Positivity)</li>
+                            <li>Acoustic Properties</li>
+                            <li>Instrumental Content</li>
+                            <li>Loudness and Tempo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recommendation">
+        <div class="container">
+            <div class="card input-card">
+                <h2>🎛️ Enter Your Music Preferences</h2>
+                <p class="instruction">Enter values between 0 and 1 for each feature:</p>
+                
+                <div class="input-grid" id="inputForm">
+                </div>
+
+                <button class="btn btn-primary" onclick="getRecommendations()" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-music"></i> Get Music Recommendations
+                </button>
+            </div>
+            <div class="status-bar" id="statusBar">
+                🎵 Ready to discover your next favorite songs!
+            </div>
+            <div id="recommendationsModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>🎶 Your Personalized Music Recommendations</h2>
+                        <span class="close" onclick="closeModal()">&times;</span>
+                    </div>
+
+                   <!-- <div class="preferences-card">
+                        <h3>📊 Your Music Preferences</h3>
+                        <div id="userPreferences" class="preferences-display"></div>
+                        <div class="model-info">
+                            📈 Model Accuracy: R² = <span id="modelAccuracy">0.000</span>
+                        </div>
+                    </div> -->   
+
+                    <div class="recommendations-section">
+                        <h3>🎵 Recommended Songs For You</h3>
+                        <div id="recommendationsList" class="recommendations-list">
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" onclick="closeModal()">
+                            <i class="fas fa-arrow-left"></i> Back to Main Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <p>I'm <strong>Mebrie Awoke</strong> Intermediate Machine Learning and Web Developer</p>
+                <p>I'm passionate about building intelligent systems that enhance user experiences.</p>
+                <p>If you have any project ideas that you want to develop, feel free to reach out!</p>
+                <p>Get in touch with me for collaborations or questions</p>
+                <p>You can find me on social media:</p>
+                <h4>Follow me in my telegram(<a href="https://t.me/codewithmemo">Code With Memo</a>)  and  WhatsApp(<a href="https://chat.whatsapp.com/L6nKX5wJkIo3f0bTQcgr3X?mode=ems_copy_text">Code With Memo</a>)  channels</h4>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="profile-section">
+                        <div class="profile-image-container">
+                            <img src="mebrie.jpg" alt="Mebrie Awoke" class="profile-image">
+                            <div class="profile-overlay">
+                                <h3>Mebrie Awoke</h3>
+                                <p>Music Recommendation System Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Addis Ababa, Ethiopia</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+251 922 545 447</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>mebrieawoke941@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Available</h4>
+                            <p>Monday - Saturday: 8PM - 11AM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-contact">
+                    <div class="card">
+                        <h3>Quick Connect</h3>
+                        <p>Feel free to reach out to me directly through any of these channels:</p>
+                        
+                        <div class="contact-buttons">
+                            <a href="https://mebrieawoke941@gmail.com" class="contact-btn email-btn">
+                                <i class="fas fa-envelope"></i>
+                                <span>Send Email</span>
+                            </a>
+                            <a href="tel:+251922545447" class="contact-btn phone-btn">
+                                <i class="fas fa-phone"></i>
+                                <span>Call Now</span>
+                            </a>
+                            <a href="https://wa.me/251922545447" class="contact-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://t.me/ze_meryma_21" class="contact-btn telegram-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                        
+                        <div class="social-links-contact">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/mebrieawoke" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/mebrieawoke" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/mebrieawoke/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/mebrieawoke/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/Mebrie-Awoke" class="social-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.mebrieawoke.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/mebrieawoke"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mebrieawoke/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/mebrieawoke"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 MusicRec. All rights reserved. Mebrie Awoke</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
