@@ -1,4 +1,4 @@
-# 🎵 Smart Music Recommendation System
+# 🎵 Smart Music Recommendation System(https://mebriemusicreccomender.netlify.app) 
 
 An intelligent music recommendation engine that suggests songs based on user preferences using machine learning.
 
@@ -40,5 +40,5 @@ An intelligent music recommendation engine that suggests songs based on user pre
 3. Run the backend server
 4. Open `index.html` in your browser
 
-Mebrie Awoke 
+Mebrie Awoke
  
