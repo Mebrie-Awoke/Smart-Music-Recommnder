@@ -27,7 +27,7 @@ An intelligent music recommendation engine that suggests songs based on user pre
 3. **Prediction**: System recommends songs based on learned preferences
 4. **Web Integration**: Frontend connects with Python backend for seamless experience
 
-## 🎯 ML Approach
+##  ML Approach
 - **Algorithm**: Linear Regression
 - **Type**: Supervised Machine Learning
 - **Input**: User preference data
