@@ -7,7 +7,6 @@ An intelligent music recommendation engine that suggests songs based on user pre
 - **Modern Web Interface**: Clean, responsive UI built with HTML, CSS & JavaScript
 - **Machine Learning Backend**: Powered by Python data processing and scikit-learn
 - **Large Dataset**: Trained on extensive music data for accurate predictions
-
 ##  Tech Stack
 **Frontend**
 - HTML5, CSS3, JavaScript
