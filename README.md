@@ -42,5 +42,5 @@ An intelligent music recommendation engine that suggests songs based on user pre
 3. Run the backend server
 4. Open `index.html` in your browser
 
-Mebrie Awoke
+Mebrie Awo
  
