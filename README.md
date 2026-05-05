@@ -12,7 +12,6 @@ An intelligent music recommendation engine that suggests songs based on user pre
 **Frontend**
 - HTML5, CSS3, JavaScript
 
-
 **Backend & ML**
 - Python 3
 - Pandas (Data Processing)
