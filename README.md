@@ -9,7 +9,6 @@ An intelligent music recommendation engine that suggests songs based on user pre
 - **Large Dataset**: Trained on extensive music data for accurate predictions
 
 
-
 Meb
 ##  Tech Stack
 **Frontend**
