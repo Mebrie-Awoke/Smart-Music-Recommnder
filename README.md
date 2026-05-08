@@ -9,7 +9,7 @@ An intelligent music recommendation engine that suggests songs based on user pre
 - **Large Dataset**: Trained on extensive music data for accurate predictions
 
 
-Me
+M
 ##  Tech Stack
 **Frontend**
 - HTML5, CSS3, JavaScript
