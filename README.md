@@ -10,7 +10,7 @@ An intelligent music recommendation engine that suggests songs based on user pre
 
 
 
-Mebr
+Mebri
 
 ##  Tech Stack
 **Frontend**
