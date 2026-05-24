@@ -1,7 +1,6 @@
 # Smart Music Recommendation System(https://mebriemusicreccomender.netlify.app) 
 
 An intelligent music recommendation engine that suggests songs based on user preferences using machine learning.
-
 ##  Features
 - **Personalized Recommendations**: Get song suggestions tailored to your taste
 - **Modern Web Interface**: Clean, responsive UI built with HTML, CSS & JavaScript
